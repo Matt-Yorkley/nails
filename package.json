@@ -1,0 +1,13 @@
+{
+  "name": "nails-rails",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@rails/actioncable": "^7.0.2-2",
+    "stimulus": "^3.0.1"
+  },
+  "devDependencies": {
+    "vite": "^2.7.7",
+    "vite-plugin-ruby": "^3.0.5"
+  }
+}
