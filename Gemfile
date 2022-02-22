@@ -40,3 +40,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "nats-pure", "~> 2.0"
