@@ -1,0 +1,6 @@
+.git
+tmp
+log
+public/assets
+.bundle
+public/vite-dev
