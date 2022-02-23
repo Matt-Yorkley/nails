@@ -1,5 +1,15 @@
 <h2>Cable Test</h2>
 
-<button data-reflex="click->ExampleReflex#sanity_check">Test</button>
+<p>Current region: <%= Region.current %></p>
 
-<p id="number"></p>
+<br />
+
+<button data-reflex="click->ExampleReflex#local">Test targeted broadcast</button>
+
+<p id="local-number">Random number: </p>
+
+<br />
+
+<button data-reflex="click->ExampleReflex#global">Test global broadcast</button>
+
+<p id="global-number">Random number: </p>

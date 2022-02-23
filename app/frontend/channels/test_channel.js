@@ -1,8 +1,8 @@
 import consumer from './consumer'
+import CableReady from 'cable_ready'
 
-window.Test = consumer.subscriptions.create("TestChannel", {
+consumer.subscriptions.create("TestChannel", {
   received(data) {
-    console.log("Received:")
-    console.log(data)
+    if (data.cableReady) CableReady.perform(data.operations)
   }
 });

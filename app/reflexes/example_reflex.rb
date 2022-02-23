@@ -33,8 +33,14 @@ class ExampleReflex < ApplicationReflex
   #
   # Learn more at: https://docs.stimulusreflex.com/rtfm/reflex-classes
 
-  def sanity_check
-    cable_ready.inner_html("#number", html: "Random number: #{rand(9999)}").broadcast
+  def local
+    cable_ready.inner_html("#local-number", html: "Random number: #{rand(9999)}").broadcast
+
+    morph :nothing
+  end
+
+  def global
+    cable_ready["test"].inner_html("#global-number", html: "Random number: #{rand(9999)} (from #{Region.current})").broadcast
 
     morph :nothing
   end
