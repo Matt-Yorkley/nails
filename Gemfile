@@ -44,3 +44,6 @@ end
 gem "nats-pure", "~> 2.0"
 
 gem "vite_rails", "~> 3.0"
+
+gem "stimulus_reflex", "~> 3.5.0-pre8"
+gem "cable_ready", "~> 5.0.0-pre8"
